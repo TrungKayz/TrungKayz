@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    font-family: "Times New Roman";
+    background:#e6d18a;
+    font-size:20px;
+}
+
+/* Header */
+.header{
+    background:#c4001a;
+    color:yellow;
+    text-align:center;
+    padding:20px;
+    font-weight:bold;
+    font-size:32px;
+}
+
+/* Menu */
+.menu{
+    background:#b30017;
+    color:yellow;
+    padding:10px 25px;
+    font-size:22px;
+}
+
+.menu span{
+    margin-right:20px;
+}
+
+/* Khung giữa */
+.main{
+    width:850px;
+    margin:25px auto;
+}
+
+/* Khung nội dung */
+.post{
+    background:white;
+    border:3px solid red;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:30px;
+}
+
+.post h3{
+    color:#b30017;
+    margin-top:0;
+    font-size:28px;
+}
+
+.post p{
+    font-size:20px;
+    text-align:justify;
+    line-height:1.6;
+}
+
+.post img{
+    width:100%;
+    margin-top:10px;
+    border-radius:6px;
+}
+/* Hoa mai rơi */
+.fall{
+    position: fixed;
+    top: -50px;
+    font-size: 26px;
+    color: yellow;
+    animation: roi linear infinite;
+    z-index: 999;
+}
+
+@keyframes roi{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
