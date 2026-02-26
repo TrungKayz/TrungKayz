@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Báo Tường Xuân 2026</title>
+
+<!-- Kết nối file CSS -->
+<link rel="stylesheet" href="font chu va mau.css">
+
+</head>
+<body>
+<!-- Hoa mai rơi nhiều -->
+<div class="fall" style="left:5%; animation-duration:6s;">🌸</div>
+<div class="fall" style="left:10%; animation-duration:8s;">🌸</div>
+<div class="fall" style="left:15%; animation-duration:7s;">🌸</div>
+<div class="fall" style="left:20%; animation-duration:9s;">🌸</div>
+<div class="fall" style="left:25%; animation-duration:6s;">🌸</div>
+<div class="fall" style="left:30%; animation-duration:8s;">🌸</div>
+<div class="fall" style="left:35%; animation-duration:7s;">🌸</div>
+<div class="fall" style="left:40%; animation-duration:9s;">🌸</div>
+<div class="fall" style="left:45%; animation-duration:6s;">🌸</div>
+<div class="fall" style="left:50%; animation-duration:8s;">🌸</div>
+<div class="fall" style="left:55%; animation-duration:7s;">🌸</div>
+<div class="fall" style="left:60%; animation-duration:9s;">🌸</div>
+<div class="fall" style="left:65%; animation-duration:6s;">🌸</div>
+<div class="fall" style="left:70%; animation-duration:8s;">🌸</div>
+<div class="fall" style="left:75%; animation-duration:7s;">🌸</div>
+<div class="fall" style="left:80%; animation-duration:9s;">🌸</div>
+<div class="fall" style="left:85%; animation-duration:6s;">🌸</div>
+<div class="fall" style="left:90%; animation-duration:8s;">🌸</div>
+<div class="fall" style="left:95%; animation-duration:7s;">🌸</div>
+<div class="header">
+    BÁO TƯỜNG XUÂN PHÚ YÊN 2026<br>
+    Chúc mừng năm mới
+</div>
+
+<div class="menu">
+    <span>Chúc</span>
+    <span>Mừng</span>
+    <span>Năm</span>
+    <span>Mới</span>
+</div>
+
+<div class="main">
+
+    <div class="post">
+        <h3>NGUỒN GỐC TẾT NGUYÊN ĐÁN</h3>
+        <p>
+        Tết Nguyên đán ở Phú Yên mang đậm nét đẹp truyền thống của người dân miền Trung, vừa giản dị, chân chất nhưng cũng rất ấm áp và rộn ràng. Những ngày giáp Tết, khắp nơi từ thành phố Tuy Hòa đến các vùng quê đều nhộn nhịp không khí dọn dẹp nhà cửa, sửa sang bàn thờ, mua sắm bánh mứt và hoa mai vàng – loài hoa đặc trưng tượng trưng cho may mắn, tài lộc.
+        </p>
+        <img src="https://images2.thanhnien.vn/528068263637045248/2026/2/9/edit_photo_jdmhlkuwuy-1770607917.jpg">
+    </div>
+
+    <div class="post">
+        <h3>Ý NGHĨA CỦA NGÀY TẾT</h3>
+        <p>
+        Tết Nguyên đán ở Phú Yên không chỉ là dịp nghỉ ngơi, vui chơi mà còn mang nhiều ý nghĩa sâu sắc về văn hóa và tinh thần. Trước hết, đó là thời điểm để mỗi người trở về sum họp bên gia đình sau một năm làm việc, học tập xa nhà, cùng nhau quây quần bên mâm cơm Tết và chia sẻ những khoảnh khắc ấm áp.
+        </p>
+        <img src="https://images2.thanhnien.vn/528068263637045248/2026/2/9/edit_photo_ernkzpxmvz-1770607917.jpg">
+    </div>
+
+    <div class="post">
+        <h3>PHÚ YÊN – XỨ HOA VÀNG TRÊN CỎ XANH</h3>
+        <p>
+        Phú Yên được nhiều người biết đến với hình ảnh thơ mộng “hoa vàng trên cỏ xanh” sau khi bộ phim cùng tên được quay tại đây. Cụm từ này không chỉ gợi lên vẻ đẹp thiên nhiên trong trẻo, bình yên mà còn trở thành biểu tượng du lịch của vùng đất này. Những bãi cỏ xanh mướt trải dài, điểm xuyết sắc vàng của hoa dại, cùng khung cảnh làng quê mộc mạc, biển xanh, núi non hùng vĩ đã tạo nên một Phú Yên giản dị nhưng đầy sức hút.
+        </p>
+        <img src="https://cdn.nhandan.vn/images/79c6dd00909745ca3057568791e31a4b5d79017e1c82c89341da8a8f9a9c98ca180dd3010c83f4133d725a81c45da449e73c01e93143d7c67ec9ad412323d62c3300bf6f984c06dcd217c5e7a0314076/bc935396a88efeeb897e4893c37517cf.jpg">
+    </div>
+    <!-- Form -->
+    <div class="post">
+    <h3>ĐỂ LẠI LỜI CHÚC</h3>
+
+    Họ và tên:<br>
+    <input type="text" id="ten"><br><br>
+
+    Lời chúc:<br>
+    <textarea id="loichuc" rows="4" cols="40"></textarea><br><br>
+
+    <button onclick="camon()">Gửi lời chúc</button>
+
+    <!-- Nơi hiển thị cảm ơn -->
+    <div id="ketqua" style="margin-top:15px; color:red;"></div>
+</div>
+<script>
+function camon(){
+    var ten = document.getElementById("ten").value;
+    var loi = document.getElementById("loichuc").value;
+
+    if(ten == "" || loi == ""){
+        alert("Vui lòng nhập đầy đủ!");
+    }else{
+        document.getElementById("ketqua").innerHTML =
+        "Cảm ơn " + ten + " đã gửi lời chúc!<br>" +
+        "<img src='stay-home-and-celebrate-the-new-year-new-year.gif' width='120'>";
+        
+        document.getElementById("ten").value = "";
+        document.getElementById("loichuc").value = "";
+    }
+}
+</script>
+</body>
+</html>
+    <!-- Nhạc (thay link tại src) -->
+    <div class="post">
+        <h3>LỜI CHÚC NĂM MỚI</h3>
+        <p>Chúc bạn năm mới an khang thịnh vượng, vạn sự như ý, sức khỏe dồi dào và luôn gặp nhiều may mắn, nhiều niềm vui, thành công trong học tập và cuộc sống, mọi điều tốt đẹp sẽ đến, bình an, hạnh phúc, tiền vào như nước, may mắn cả năm.</p>
+
+        <audio controls>
+            <source src="Trc Nhn _ VN S NH  _ Official MV.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+</div>
+
+</body>
+</html>
